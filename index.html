@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ujjwal Sharma — Elite Full Stack Engineer & UI/UX Designer</title>
+  <meta name="description" content="Founder @StackByUjjwal. Elite Full Stack Engineer turning caffeine into code and bugs into jaw-dropping futuristic web experiences.">
+  
+  <!-- Icons & Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  
+  <!-- Three.js Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <!-- Custom Cursor Follower -->
+  <div id="cursor-follower"></div>
+
+  <!-- Fixed WebGL Background Atmosphere -->
+  <div class="fixed-bg">
+    <canvas id="shader-canvas"></canvas>
+  </div>
+
+  <!-- Floating Glass Top Navigation Bar -->
+  <nav class="glass-navbar interactive-glass">
+    <a href="#hero" class="footer-brand text-gradient-purple" style="text-decoration:none;"><i class="fa-solid fa-user-graduate"></i> &nbsp;UJJWAL SHARMA</a>
+    
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#expertise">Skills</a>
+      <a href="#services">Services</a>
+      <a href="#work">Portfolio</a>
+      <a href="#journey">Journey</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <a href="#contact" class="nav-cta interactive-glass">
+      Hire Me <span class="material-symbols-outlined" style="font-size: 16px;">arrow_forward</span>
+    </a>
+  </nav>
+
+  <!-- Main Content Layout -->
+  <main class="main-container">
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      
+      <!-- Interactive Three.js 3D Creative Engine Background -->
+      <div class="hero-3d-bg">
+        <div id="threejs-container"></div>
+      </div>
+
+      <div class="hero-content">
+        <div class="status-chip fade-up">
+          <span class="status-dot"></span> Available for new Full Stack & UI/UX projects
+        </div>
+
+        <h1 class="headline-xl fade-up delay-1">
+          I'm <span class="text-gradient">Ujjwal Sharma</span> <br> Elite Full Stack Engineer
+        </h1>
+
+        <p class="body-lg fade-up delay-2" style="color: var(--on-surface-variant); max-width: 720px;">
+          "Hi there, Founder @StackByUjjwal. I turn caffeine into clean code and complex bugs into features. I build highly scalable web architectures and hypnotic glassmorphism interfaces that even your grandma would love!"
+        </p>
+
+        <div class="hero-btns fade-up delay-3">
+          <a href="#work" class="primary-btn interactive-glass">
+            Explore Portfolio <span class="material-symbols-outlined" style="font-size: 18px;">north_east</span>
+          </a>
+          <a href="#contact" class="glass-card secondary-btn glow-hover interactive-glass" style="padding: 1rem 2.25rem;">
+            Initiate Contact
+          </a>
+          <a href="https://github.com/stackbyujjwal" target="_blank" class="glass-card secondary-btn glow-cyan interactive-glass" style="padding: 1rem 1.75rem; color: var(--tertiary);">
+            <i class="fa-brands fa-github"></i> &nbsp;GitHub
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-grid" id="about">
+      <div class="about-text fade-up">
+        <h2 class="headline-lg">Who Am I? <span class="text-gradient">Elite Engineer</span></h2>
+        <p style="color: var(--on-surface-variant);">
+          "Hey there! I create interfaces so smooth they practically butter your toast, and write backend logic in JS, C++, and Firebase so clean it makes Marie Kondo proud."
+        </p>
+        <p style="color: var(--on-surface-variant);">
+          "When I'm not architecting secure NoSQL cloud databases or prepping for top-tier competitive MCA programs (NIMCET & CUET PG), I'm probably lifting dumbbells or analyzing chess tactics to keep my computational logic razor-sharp!"
+        </p>
+
+        <div class="stats-container">
+          <div>
+            <div class="stat-num text-gradient-purple count-up" data-target="4">0</div>
+            <div class="stat-label">YEARS EXPERIENCE</div>
+          </div>
+          <div>
+            <div class="stat-num text-gradient count-up" data-target="50">0</div>
+            <div class="stat-label">PROJECTS SHIPPED</div>
+          </div>
+          <div>
+            <div class="stat-num count-up" style="color: var(--tertiary);" data-target="10">0</div>
+            <div class="stat-label">TECH STACKS</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-visual fade-up delay-2">
+        <div class="ambient-glow-1"></div>
+        <div class="ambient-glow-2"></div>
+        
+        <div class="avatar-badge">
+          <div class="avatar-inner glow-hover interactive-glass" style="flex-direction: column; text-align: center; gap: 0.5rem; padding: 2rem;">
+            <i class="fa-solid fa-code avatar-icon" style="font-size: 90px; color: var(--primary);"></i>
+            <span class="label-mono" style="color: var(--tertiary); font-size: 13px;">KANPUR, INDIA</span>
+            <span style="font-family: var(--font-mono); font-size: 11px; color: var(--on-surface-variant);">stackbyujjwal@gmail.com</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Core Expertise / Skills Section -->
+    <section id="expertise" style="padding-top: 2rem;">
+      <div class="section-header fade-up">
+        <h2 class="headline-lg">Professional <span class="text-gradient">Skills</span></h2>
+        <p style="color: var(--on-surface-variant); margin-top: 0.75rem;">
+          The specialized programming languages, cloud databases, and creative design tools I wield.
+        </p>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Skill 1 -->
+        <div class="glass-card skill-card glow-hover interactive-glass fade-up">
+          <div class="ring-container" data-percent="95">
+            <svg class="ring-svg" viewBox="0 0 100 100">
+              <circle class="ring-bg" cx="50" cy="50" r="45"></circle>
+              <circle class="ring-progress" cx="50" cy="50" r="45" style="stroke: var(--primary-accent);"></circle>
+            </svg>
+            <div class="ring-text" style="color: var(--primary);">95%</div>
+          </div>
+          <h3 class="label-mono" style="color: var(--on-surface); font-size: 14px;">HTML5 & CSS3 Styling</h3>
+        </div>
+
+        <!-- Skill 2 -->
+        <div class="glass-card skill-card glow-cyan interactive-glass fade-up delay-1">
+          <div class="ring-container" data-percent="90">
+            <svg class="ring-svg" viewBox="0 0 100 100">
+              <circle class="ring-bg" cx="50" cy="50" r="45"></circle>
+              <circle class="ring-progress" cx="50" cy="50" r="45" style="stroke: var(--tertiary);"></circle>
+            </svg>
+            <div class="ring-text" style="color: var(--tertiary);">90%</div>
+          </div>
+          <h3 class="label-mono" style="color: var(--on-surface); font-size: 14px;">JavaScript & ES6+ DOM</h3>
+        </div>
+
+        <!-- Skill 3 -->
+        <div class="glass-card skill-card glow-purple interactive-glass fade-up delay-2">
+          <div class="ring-container" data-percent="85">
+            <svg class="ring-svg" viewBox="0 0 100 100">
+              <circle class="ring-bg" cx="50" cy="50" r="45"></circle>
+              <circle class="ring-progress" cx="50" cy="50" r="45" style="stroke: var(--secondary);"></circle>
+            </svg>
+            <div class="ring-text" style="color: var(--secondary);">85%</div>
+          </div>
+          <h3 class="label-mono" style="color: var(--on-surface); font-size: 14px;">Firebase & Realtime DB</h3>
+        </div>
+
+        <!-- Skill 4 -->
+        <div class="glass-card skill-card glow-hover interactive-glass fade-up delay-3">
+          <div class="ring-container" data-percent="80">
+            <svg class="ring-svg" viewBox="0 0 100 100">
+              <circle class="ring-bg" cx="50" cy="50" r="45"></circle>
+              <circle class="ring-progress" cx="50" cy="50" r="45" style="stroke: var(--surface-tint);"></circle>
+            </svg>
+            <div class="ring-text" style="color: var(--surface-tint);">80%</div>
+          </div>
+          <h3 class="label-mono" style="color: var(--on-surface); font-size: 14px;">C++ & Core Algorithms</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" style="padding-top: 4rem;">
+      <div class="section-header fade-up">
+        <h2 class="headline-lg">What I Do <span class="text-gradient">For You</span></h2>
+      </div>
+
+      <div class="services-grid">
+        <div class="glass-card service-card glow-hover interactive-glass fade-up">
+          <i class="fa-solid fa-laptop-code service-icon"></i>
+          <h3 class="headline-md">Full Stack Development</h3>
+          <p style="color: var(--on-surface-variant); font-size: 15px;">
+            I'm your web wizard! With my coding wand (JS & Firebase), I conjure custom scalable web platforms tailored to fit your business like an elite suit.
+          </p>
+        </div>
+
+        <div class="glass-card service-card glow-cyan interactive-glass fade-up delay-1">
+          <i class="fa-solid fa-pen-to-square service-icon" style="color: var(--tertiary);"></i>
+          <h3 class="headline-md">UI/UX & Graphic Design</h3>
+          <p style="color: var(--on-surface-variant); font-size: 15px;">
+            I'll jazz up your project with a design symphony that's as smooth as butter, visually vibrant, and as intuitive as your favorite mobile app.
+          </p>
+        </div>
+
+        <div class="glass-card service-card glow-purple interactive-glass fade-up delay-2">
+          <i class="fa-solid fa-database service-icon" style="color: var(--secondary);"></i>
+          <h3 class="headline-md">Database Architecture</h3>
+          <p style="color: var(--on-surface-variant); font-size: 15px;">
+            Structuring robust, high-security NoSQL cloud databases. I guarantee your application's telemetry flows flawlessly and scales effortlessly.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Selected Work Showcase -->
+    <section id="work" style="padding-top: 4rem;">
+      <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; margin-bottom: 3rem;" class="fade-up">
+        <div>
+          <h2 class="headline-lg">Recent <span class="text-gradient">Portfolio</span></h2>
+          <p style="color: var(--on-surface-variant); margin-top: 0.5rem;">Showcasing my full-stack applications with style and precision.</p>
+        </div>
+        <a href="https://github.com/stackbyujjwal" target="_blank" class="action-link" style="font-size: 15px; margin-top: 1rem;">
+          Explore Complete GitHub <span class="material-symbols-outlined" style="font-size: 18px;">arrow_forward</span>
+        </a>
+      </div>
+
+      <div class="work-grid">
+        <!-- Project 1 -->
+        <div class="project-card glow-hover interactive-glass fade-up">
+          <img src="https://images.unsplash.com/photo-1626785774625-ddcddc3445e9?q=80&w=1200&auto=format&fit=crop" alt="Smart Habit Tracker" class="project-img">
+          <div class="project-overlay"></div>
+          
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="tag" style="color: var(--primary);">FULL STACK APP</span>
+              <span class="tag" style="color: var(--tertiary);">FIREBASE DB</span>
+            </div>
+            <h3 class="headline-md">Smart Habit Tracker</h3>
+            <p class="project-desc">Full-stack web application integrated with secure real-time Firebase cloud database architecture and kinetic analytics.</p>
+            <div class="project-actions">
+              <a href="https://github.com/stackbyujjwal" target="_blank" class="action-link"><span class="material-symbols-outlined" style="font-size: 18px;">rocket_launch</span> Live Demo</a>
+              <a href="https://github.com/stackbyujjwal" target="_blank" class="action-link"><span class="material-symbols-outlined" style="font-size: 18px;">code_blocks</span> Source Code</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card glow-purple interactive-glass fade-up delay-1">
+          <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1200&auto=format&fit=crop" alt="Ecommerce Platform" class="project-img">
+          <div class="project-overlay"></div>
+          
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="tag" style="color: var(--secondary);">E-COMMERCE</span>
+              <span class="tag" style="color: var(--primary);">UI/UX SHOWROOM</span>
+            </div>
+            <h3 class="headline-md">Elite E-Commerce Platform</h3>
+            <p class="project-desc">Shop Till You Drop! High-conversion online shopping suite engineered with vibrant micro-interactions and instant checkout.</p>
+            <div class="project-actions">
+              <a href="https://github.com/stackbyujjwal" target="_blank" class="action-link"><span class="material-symbols-outlined" style="font-size: 18px;">rocket_launch</span> Live Demo</a>
+              <a href="https://github.com/stackbyujjwal" target="_blank" class="action-link"><span class="material-symbols-outlined" style="font-size: 18px;">code_blocks</span> Source Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Professional Journey Timeline -->
+    <section id="journey" style="padding-top: 4rem;">
+      <div class="section-header fade-up">
+        <h2 class="headline-lg">My <span class="text-gradient">Journey</span></h2>
+        <p style="color: var(--on-surface-variant); margin-top: 0.5rem;">The chronological milestones of my engineering career.</p>
+      </div>
+
+      <div class="timeline-container">
+        <div class="timeline-spine"></div>
+
+        <div class="timeline-items">
+          <!-- Item 1 -->
+          <div class="timeline-item fade-up">
+            <div class="timeline-left">
+              <h3 class="headline-md" style="color: var(--primary); font-size: 22px;">Founder & Engineer</h3>
+              <p class="label-mono" style="color: var(--on-surface-variant); margin-top: 0.25rem;">@STACKBYUJJWAL</p>
+            </div>
+
+            <div class="timeline-node">
+              <div class="node-core"></div>
+            </div>
+
+            <div class="timeline-right">
+              <div class="glass-card experience-card glow-hover interactive-glass">
+                <span class="label-mono" style="color: var(--tertiary); font-size: 12px; display: block; margin-bottom: 0.5rem;">2024 — PRESENT</span>
+                <h3 class="headline-md d-md-none" style="color: var(--primary); font-size: 20px; margin-bottom: 0.25rem;">Founder & Engineer (@StackByUjjwal)</h3>
+                <p style="color: var(--on-surface-variant); font-size: 15px;">
+                  Building a personal tech brand and developer community. Sharing coding insights, development journeys, and shipping robust full-stack applications to solve real-world problems.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2 (Reverse) -->
+          <div class="timeline-item reverse fade-up delay-1">
+            <div class="timeline-left">
+              <h3 class="headline-md" style="color: var(--secondary); font-size: 22px;">Frontend Developer</h3>
+              <p class="label-mono" style="color: var(--on-surface-variant); margin-top: 0.25rem;">BIYOANS PVT. LTD.</p>
+            </div>
+
+            <div class="timeline-node">
+              <div class="node-core"></div>
+            </div>
+
+            <div class="timeline-right">
+              <div class="glass-card experience-card glow-purple interactive-glass">
+                <span class="label-mono" style="color: var(--secondary); font-size: 12px; display: block; margin-bottom: 0.5rem;">2023 — 2024</span>
+                <h3 class="headline-md d-md-none" style="color: var(--secondary); font-size: 20px; margin-bottom: 0.25rem;">Frontend Developer (Biyoans Pvt. Ltd.)</h3>
+                <p style="color: var(--on-surface-variant); font-size: 15px;">
+                  Underwent rigorous frontend development engineering. Mastered HTML5, CSS3, JavaScript, and responsive design frameworks to craft systematic user interfaces.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="timeline-item fade-up delay-2">
+            <div class="timeline-left">
+              <h3 class="headline-md" style="color: var(--tertiary); font-size: 22px;">B.Sc Physics & MCA Prep</h3>
+              <p class="label-mono" style="color: var(--on-surface-variant); margin-top: 0.25rem;">KANPUR / MARKHAM COLLEGE</p>
+            </div>
+
+            <div class="timeline-node">
+              <div class="node-core" style="background: var(--tertiary);"></div>
+            </div>
+
+            <div class="timeline-right">
+              <div class="glass-card experience-card glow-cyan interactive-glass">
+                <span class="label-mono" style="color: var(--tertiary); font-size: 12px; display: block; margin-bottom: 0.5rem;">2020 — PRESENT</span>
+                <h3 class="headline-md d-md-none" style="color: var(--tertiary); font-size: 20px; margin-bottom: 0.25rem;">B.Sc Physics & MCA Preparation</h3>
+                <p style="color: var(--on-surface-variant); font-size: 15px;">
+                  Graduated in Physics with a strong mathematical foundation. Currently based in Kanpur, aggressively prepping for NIMCET and CUET PG entrance exams for top-tier MCA.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Client Testimonials Carousel -->
+    <section id="testimonials" style="padding-top: 4rem;">
+      <div class="section-header fade-up">
+        <h2 class="headline-lg">Client <span class="text-gradient">Testimonials</span></h2>
+        <p style="color: var(--on-surface-variant); margin-top: 0.5rem;">Unfiltered feedback from my valued clients and directors.</p>
+      </div>
+
+      <div class="testimonials-slider fade-up delay-1">
+        <!-- Card 1 -->
+        <div class="glass-card testimonial-card glow-hover interactive-glass">
+          <div>
+            <div class="stars">
+              <span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span>
+            </div>
+            <p style="font-size: 16px; line-height: 1.7; margin-top: 1.5rem; color: var(--on-surface);">
+              "Working with Ujjwal Sharma to develop our website was a fantastic experience. He delivered an attractive, user-friendly site that exceeded expectations. His creativity and attention to detail truly set him apart!"
+            </p>
+          </div>
+          <div class="client-info">
+            <div class="client-avatar">G</div>
+            <div>
+              <h4 class="headline-md" style="font-size: 18px;">Gopal Mishra</h4>
+              <p class="label-mono" style="font-size: 11px; color: var(--primary);">MANAGEMENT, BIYOANS PVT. LTD.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="glass-card testimonial-card glow-cyan interactive-glass">
+          <div>
+            <div class="stars">
+              <span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span>
+            </div>
+            <p style="font-size: 16px; line-height: 1.7; margin-top: 1.5rem; color: var(--on-surface);">
+              "Collaborating with Ujjwal on my project was an outstanding experience. He crafted a visually stunning and highly functional platform. His professionalism and backend expertise were evident throughout!"
+            </p>
+          </div>
+          <div class="client-info">
+            <div class="client-avatar" style="background: linear-gradient(135deg, var(--tertiary-accent), var(--primary-accent));">M</div>
+            <div>
+              <h4 class="headline-md" style="font-size: 18px;">Mahima Jat</h4>
+              <p class="label-mono" style="font-size: 11px; color: var(--tertiary);">BCA SCHOLAR & CLIENT</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" style="padding-top: 4rem;">
+      <div class="contact-grid">
+        <div class="fade-up">
+          <h2 class="headline-xl">Get In <span class="text-gradient">Touch</span></h2>
+          <p style="color: var(--on-surface-variant); font-size: 18px; margin-top: 1.5rem; line-height: 1.7;">
+            Ready to construct a breathtaking web application or discuss competitive software engineering? Send over your message and let's talk!
+          </p>
+
+          <div style="margin-top: 3rem; display: flex; flex-direction: column; gap: 1.5rem;">
+            <div style="display: flex; align-items: center; gap: 1rem;">
+              <div class="glass-card" style="padding: 1rem; border-radius: 50%; color: var(--primary);"><span class="material-symbols-outlined">mail</span></div>
+              <div>
+                <div class="label-mono" style="font-size: 11px; color: var(--on-surface-variant);">EMAIL ADDRESS</div>
+                <div style="font-family: var(--font-mono); font-size: 16px; color: var(--on-surface);">stackbyujjwal@gmail.com</div>
+              </div>
+            </div>
+
+            <div style="display: flex; align-items: center; gap: 1rem;">
+              <div class="glass-card" style="padding: 1rem; border-radius: 50%; color: var(--tertiary);"><span class="material-symbols-outlined">phone</span></div>
+              <div>
+                <div class="label-mono" style="font-size: 11px; color: var(--on-surface-variant);">PHONE / WHATSAPP</div>
+                <div style="font-family: var(--font-mono); font-size: 16px; color: var(--on-surface);">+91 9334790796</div>
+              </div>
+            </div>
+
+            <div style="display: flex; align-items: center; gap: 1rem;">
+              <div class="glass-card" style="padding: 1rem; border-radius: 50%; color: var(--secondary);"><span class="material-symbols-outlined">location_on</span></div>
+              <div>
+                <div class="label-mono" style="font-size: 11px; color: var(--on-surface-variant);">LOCATION</div>
+                <div style="font-family: var(--font-mono); font-size: 16px; color: var(--on-surface);">Kanpur, Uttar Pradesh, India</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="fade-up delay-2">
+          <form class="glass-card contact-form glow-hover" id="contact-form" onsubmit="handleFormSubmit(event)">
+            <h3 class="headline-md" style="font-size: 24px; margin-bottom: 0.5rem;">Transmit Message</h3>
+
+            <div class="form-group">
+              <input type="text" id="sender-name" class="form-input" placeholder=" " required>
+              <label for="sender-name" class="form-label">YOUR NAME</label>
+            </div>
+
+            <div class="form-group">
+              <input type="email" id="sender-email" class="form-input" placeholder=" " required>
+              <label for="sender-email" class="form-label">YOUR EMAIL</label>
+            </div>
+
+            <div class="form-group">
+              <textarea id="project-details" class="form-input" placeholder=" " required></textarea>
+              <label for="project-details" class="form-label">PROJECT DETAILS OR SUBJECT</label>
+            </div>
+
+            <div id="form-status"></div>
+
+            <button type="submit" class="primary-btn interactive-glass" style="width: 100%; justify-content: center; padding: 1.25rem;">
+              Send Message <span class="material-symbols-outlined">send</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-brand text-gradient">UJJWAL SHARMA</div>
+      
+      <div style="font-family: var(--font-mono); font-size: 13px; color: var(--on-surface-variant);">
+        © 2026 UJJWAL SHARMA (@STACKBYUJJWAL). ALL RIGHTS RESERVED.
+      </div>
+
+      <div class="social-links" style="gap: 1.5rem; font-size: 18px;">
+        <a href="https://x.com/StackByUjjwal" target="_blank" title="X"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://instagram.com/stackbyujjwal" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://github.com/stackbyujjwal" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://linkedin.com/in/stackbyujjwal" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript Engine -->
+  <script src="main.js"></script>
+</body>
+</html>
